@@ -1,5 +1,9 @@
 function squares(x, n) {
-
+    let myArr = [x,];
+    for (let i = 0; i < n; i++) {
+        myArr.push(x = x * x);
+    }
+    return myArr.slice(0, -1)
 }
 
 console.log(squares(2, 5)); // [2,4,16,256,65536]
